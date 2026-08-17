@@ -1,5 +1,5 @@
 const express = require("express");
-const Company = require("../models/company");
+const company = require("../models/company");
 const protect = require("../middleware/authMiddleware");
 
 const router = express.Router();
