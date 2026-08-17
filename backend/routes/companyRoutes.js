@@ -1,5 +1,5 @@
 const express = require("express");
-const company = require("../models/company");
+const Company = require("../models/company");
 const protect = require("../middleware/authMiddleware");
 
 const router = express.Router();
@@ -11,7 +11,7 @@ const router = express.Router();
 
 router.get("/", async (req, res) => {
   try {
-    const companies = await Company.find().sort({
+    const companies = await company.find().sort({
       createdAt: -1,
     });
 
