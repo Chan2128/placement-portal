@@ -31,7 +31,7 @@ function Register({ onRegisterSuccess, goToLogin }) {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/auth/register",
+        "https://placement-portal-0xsf.onrender.com/api/auth/register",
         {
           method: "POST",
           headers: {

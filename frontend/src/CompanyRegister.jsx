@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Register.css";
 
-const API_BASE_URL = "http://localhost:5000/api";
+const API_BASE_URL = "https://placement-portal-0xsf.onrender.com/api";
 
 function CompanyRegister({
   goToLogin,

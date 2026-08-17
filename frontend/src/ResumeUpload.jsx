@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 
-const API_BASE_URL = "http://localhost:5000/api";
+const API_BASE_URL = "https://placement-portal-0xsf.onrender.com";
 
 function ResumeUpload({ resume, onResumeChange }) {
   const [file, setFile] = useState(null);
@@ -257,10 +257,11 @@ function ResumeUpload({ resume, onResumeChange }) {
       return;
     }
 
-    window.open(
-      `http://localhost:5000${resume.fileUrl}`,
-      "_blank"
-    );
+  window.open(
+  `${API_BASE_URL}${resume.fileUrl}`,
+  "_blank"
+);
+
   };
 
   // ========================================
