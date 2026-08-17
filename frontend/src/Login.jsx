@@ -41,7 +41,7 @@ function Login({
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/auth/login",
+        "https://placement-portal-0xsf.onrender.com",
         {
           method: "POST",
 
